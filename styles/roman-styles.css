@@ -55,6 +55,7 @@ h1 {
 h1.fizzbuzz-header1 {
     margin-bottom: 0px;
     font-family: 'Righteous', cursive;
+    margin-top: 10px;
 }
 
 h2 {
@@ -333,7 +334,7 @@ RESET STYLES
     width: 100%;
     max-width: 480px;
     margin: auto;
-    padding: 1rem;
+    padding: 1rem 1rem 0.35rem 1rem;
   
     display: grid;
     grid-gap: 30px;

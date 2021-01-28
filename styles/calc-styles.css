@@ -154,6 +154,8 @@ input {
 #strInput {
     color: #84f8f0;
     background-color: transparent;
+    border: 1px solid #84f8f0;
+    height: 36px;
 }
 
 #strInput:focus{

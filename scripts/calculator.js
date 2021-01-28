@@ -47,7 +47,7 @@ const calculate = () => {
             data.result ? result.textContent = data.result : result.textContent = "Error";
         });
     } else {
-        result.textContent = 'please clear one Input';
+        result.textContent = 'clear input';
     }
 }
 
