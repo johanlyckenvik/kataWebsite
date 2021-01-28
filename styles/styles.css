@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+body {
+    background-image: url(https://i.pinimg.com/originals/93/5e/f6/935ef6021f5925994732d7a2d060bd4c.jpg?epik=dj0yJnU9ZTd4VnlPOVJISFA0ejZaMVp1QUp3VWwxQVhVaE9XaEYmcD0wJm49MENrYms1R20xeFRYR1pGR2FhUk1mUSZ0PUFBQUFBR0FTaTFV);
+    background-size: cover;
+    font-family: 'Righteous', cursive;
+}
+
+.wrapper {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.innerWrapper {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    width: 100%;
+}
+
+
+
+.indexButton {
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    margin: 10px 0px 10px 0px;
+    font-size: 26px;
+    letter-spacing: 4px;
+    /* text-transform: uppercase; */
+    background: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffec;
+    border-radius: 20px;
+    color: #00ffec;
+    
+}
+
+.indexButton:hover {
+    background-color: rgba(0, 57, 53, 0.5);
+    cursor: pointer;
+    font-size: 28px;
+    text-shadow: 0px 0px 10px #d1eceb;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    color: #00ffec;
+}
