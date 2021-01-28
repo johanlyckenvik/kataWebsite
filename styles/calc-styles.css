@@ -71,18 +71,6 @@ h3 {
     color: #00ffec;
 }
 
-
-.fizz-wrapper {
-    width: 350px;
-    padding: 25px 0px 25px 0px;
-    margin: 10px auto 10px auto;
-    letter-spacing: 4px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #00ffec;
-    border-radius: 20px;
-    color: #00ffec;
-}
-
 button:focus{
     outline: none;
 }
@@ -98,7 +86,7 @@ button:focus{
 
 .calc-wrapper {
     width: 650px;
-    padding: 25px 0px 140px 0px;
+    padding: 25px 0px 190px 0px;
     letter-spacing: 4px;
     background: rgba(0, 0, 0, 0.7);
     border: 1px solid #00ffec;
@@ -108,18 +96,10 @@ button:focus{
 }
 
   .container{
-    color: rgb(207, 198, 75);
     margin: auto;
     background: transparent;
     height: 150px;
   }
-
-input:hover{
-    background-color: rgba(0, 57, 53, 0.5);
-    cursor: pointer;
-    text-shadow: 0px 0px 10px #d1eceb;
-}
-
 
 
 .result {
@@ -160,6 +140,79 @@ input {
     width: 40px;
     border: 1px solid  #00ffec;
 }
+
+.calcbtn:focus{
+    outline: none;
+}
+
+.calcbtn:hover{
+    background-color: rgba(0, 57, 53, 0.5);
+    cursor: pointer;
+    text-shadow: 0px 0px 10px #d1eceb;
+}
+
+#strInput {
+    color: #84f8f0;
+    background-color: transparent;
+}
+
+#strInput:focus{
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

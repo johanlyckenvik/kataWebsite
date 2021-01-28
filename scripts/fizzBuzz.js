@@ -57,15 +57,15 @@ const fizzbuzz = array => array.map(input => {
       console.log(userInput[0] - 1);
       contentDiv.removeChild(whatsNext);
       innerWrapper.removeChild(buttonContainer);
-      contentDiv.appendChild(createElement('div', score - 1, 'score'));
+      contentDiv.appendChild(createElement('div', `Score: ${score - 1}`, 'score'));
       switch(true){
         case score >= 5: 
-            let msg1 = createElement('div', 'Message when fail 5 or more', 'message1');
+            let msg1 = createElement('div', 'The force is strong in this one. Well done.', 'message1');
             msg1.classList.add('failMessage');
             contentDiv.appendChild(msg1);
             break;
         case score >= 2: 
-            let msg2 = createElement('div', 'Message when fail between 2 and 4', 'message2');
+            let msg2 = createElement('div', 'You have not finished your training yet, young padawan.', 'message2');
             msg2.classList.add('failMessage');
             contentDiv.appendChild(msg2);
             break;

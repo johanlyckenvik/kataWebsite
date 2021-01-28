@@ -27,34 +27,38 @@ function evaluate(str, callback){
         callback({error: 'Unable to calculate, please try again'});
     }
 }
-// Only two numbers
-// if number is clicked - add correct int num to it.
-// if + - / is clicked - add correct operation.
-// if = sign is clicked - calculate
-// store result - add everything to result and display if = is clicked
 
 let input = '';
+let textInput = '';
 let result = document.getElementById('result');
 
 const displayNum = (num) => {
-    //let result = document.getElementById('result').value;
     input += num;
     result.textContent = input;
-    console.log(input)
 }   
 
 const calculate = () => {
-    
-    evaluate(input, (data) => {
-        data.result ? result.textContent = data.result : result.textContent = data.error;
-    });
+    if (input && !textInput){ 
+        evaluate(input, (data) => {
+            data.result ? result.textContent = data.result : result.textContent = "Error";
+        });
+    } else if (!input && textInput) {
+        evaluate(textInput, (data) => { 
+            data.result ? result.textContent = data.result : result.textContent = "Error";
+        });
+    } else {
+        result.textContent = 'please clear one Input';
+    }
 }
 
 const clearInput = () => {
     input = '';
     result.textContent = '0';
-    console.log(input);
+}
 
+const handleTextInput = () => {
+    let inputField = document.getElementById('strInput').value;
+    textInput = inputField;
 }
 
 
