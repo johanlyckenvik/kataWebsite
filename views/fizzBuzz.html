@@ -8,20 +8,22 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1>Mobsters</h1>
-        <h2>FizzBuzz</h2>
-        <div class="innerWrapper">
+        <h1 class="fizzbuzz-header1">FizzBuzz</h1>
+        <h2 class="fizzbuzz-header2">Mobsters</h2>
+        <div class="innerWrapper fizz-wrapper">
             <div class="content">
-                <h3>1</h3>
-                <h3>What's next?</h3>
+                <h1 id="counter">1</h1>
+                <h3 id="nextH3">What's next?</h3>
             </div>
-            <div class="buttons">
-                <button id="b1">Fizz</button>
-                <button id="b2">Buzz</button>
-                <button id="b3">FizzBuzz</button>
-                <button id="b4">2</button>
+            <div id='buttonContainer' class="buttons">
+                <button class="fizz-btn" id="b1" value="Fizz" onclick="evalFizzBuzz('b1')">Fizz</button>
+                <button class="fizz-btn" id="b2" value="Buzz" onclick="evalFizzBuzz('b2')">Buzz</button>
+                <button class="fizz-btn" id="b3" value="FizzBuzz" onclick="evalFizzBuzz('b3')">FizzBuzz</button>
+                <button class="fizz-btn" id="b4" value="2" onclick="evalFizzBuzz('b4')">2</button>
             </div>          
         </div>
+         <a class="home-btn" href="/">Back to homebase</a>
     </div>
+    <script src="../scripts/fizzBuzz.js"></script>
 </body>
 </html>

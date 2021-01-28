@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/roman-styles.css">
+    <title>FizzBuzz</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="fizzbuzz-header1">Roman Numerals</h1>
+        <h2 class="fizzbuzz-header2">Mobsterius</h2>
+        <div class="innerWrapper fizz-wrapper">
+                <div class="page">
+                    <label class="field field_v1">
+                      <input class="field__input" placeholder="e.g. XVI" id="form">
+                      <span class="field__label-wrap">
+                        <span class="field__label">Insert a roman numeral</span>
+                      </span>
+                    </label>
+                    </div>
+            <div class="buttons">
+                <button class="roman-btn" onclick="convertForm()">Convertus</button>
+            </div>
+            
+            <p id="result"></p>
+        </div>
+         <a class="home-btn" href="/">Back to the future</a>
+    </div>
+    <script src="../scripts/numeralConverters/romanToArabic.js"></script>
+</body>
+</html>

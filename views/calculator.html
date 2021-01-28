@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/calc-styles.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="fizzbuzz-header1">Calculator</h1>
+        <h2 class="fizzbuzz-header2">Mobsters</h2>
+        <div class="innerWrapper calc-wrapper">
+            <div class="container">
+                <p id="result" class="result">0</p>
+                <div class="second-row">
+                  <input onclick="displayNum('7')" id="num7" type="button" value="7" class="calcbtn">
+                  <input onclick="displayNum('8')" id="num8" type="button" value="8" class="calcbtn">
+                  <input onclick="displayNum('9')" id="num9" type="button" value="9" class="calcbtn">
+                  <input onclick="displayNum('/')" type="button" value="/" class="calcbtn">
+                </div>
+                <div class="third-row">
+                  <input onclick="displayNum('4')" id="num4" type="button" value="4" class="calcbtn">
+                  <input onclick="displayNum('5')" id="num5" type="button" value="5" class="calcbtn">
+                  <input onclick="displayNum('6')" id="num6" type="button" value="6" class="calcbtn">
+                  <input onclick="displayNum('*')" id="multiplie" type="button" value="X" class="calcbtn">
+                </div>
+                <div class="fourth-row">
+                  <input onclick="displayNum('1')" id="num1" type="button" value="1" class="calcbtn">
+                  <input onclick="displayNum('2')" id="num2" type="button" value="2" class="calcbtn">
+                  <input onclick="displayNum('3')" id="num3" type="button" value="3" class="calcbtn">
+                  <input onclick="displayNum('-')" id="minus" type="button" value="-" class="calcbtn">
+                </div>
+                <div class="conflict">
+                  <div class="left">
+                    <input onclick="displayNum('+')" id="plus" type="button" value="+" class="calcbtn">
+                    <input onclick="displayNum('0')" id="cero"type="button" value="0" class="calcbtn">
+                    <input onclick="clearInput('')" id="del"type="button" value="C" class="calcbtn">
+                    <input onclick="calculate()" id="equal"type="button" value="=" class="calcbtn">
+                  </div>
+                  <input type="text">
+                </div>
+            </div>
+        </div>
+         <a class="home-btn" href="/">Back to homebase</a>
+    </div>
+    <script src="../scripts/calculator.js"></script>
+</body>
+</html>

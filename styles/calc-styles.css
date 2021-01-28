@@ -13,7 +13,7 @@ body {
 }
 
 .innerWrapper {
-    max-width: 350px;
+    max-width: 300px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -23,8 +23,6 @@ body {
 a {
     width: 100%;
 }
-
-
 
 .indexButton {
     width: 100%;
@@ -85,25 +83,6 @@ h3 {
     color: #00ffec;
 }
 
-.fizz-btn {
-    width: 43%;
-    padding: 10px 0px 10px 0px;
-    margin: 10px 0px 10px 0px;
-    font-size: 19px;
-    letter-spacing: 4px;
-    /* text-transform: uppercase; */
-    background: rgba(0, 0, 0, 0.7);
-    border: 1px solid #00ffec;
-    border-radius: 10px;
-    color: #00ffec;
-}
-
-.fizz-btn:hover {
-    background-color: rgba(0, 57, 53, 0.5);
-    cursor: pointer;
-    text-shadow: 0px 0px 10px #d1eceb;
-}
-
 button:focus{
     outline: none;
 }
@@ -117,39 +96,183 @@ button:focus{
     color: #226460;
 }
 
-#tryAgain {
-    color: #00ffec;
-    text-decoration: none;
-    font-size: 30px;
-    letter-spacing: 4px;
-}
-
-#tryAgain:hover {
-    text-shadow: 0px 0px 6px #226460;
-}
-
-div#score {
-    font-size: 38px;
-    margin-top: -15px;
-}
-
-
-
-
-.failMessage {
-    padding: 20px;
-    margin-bottom: 20px;
-    font-size: 26px;
-}
-
-
 .calc-wrapper {
-    width: 350px;
-    padding: 25px 0px 25px 0px;
-    margin: 10px auto 10px auto;
+    width: 650px;
+    padding: 25px 0px 140px 0px;
     letter-spacing: 4px;
     background: rgba(0, 0, 0, 0.7);
     border: 1px solid #00ffec;
     border-radius: 20px;
     color: #00ffec;
+    margin-top: 80px;
 }
+
+  .container{
+    color: rgb(207, 198, 75);
+    margin: auto;
+    background: transparent;
+    height: 150px;
+  }
+
+input:hover{
+    background-color: rgba(0, 57, 53, 0.5);
+    cursor: pointer;
+    text-shadow: 0px 0px 10px #d1eceb;
+}
+
+
+
+.result {
+    margin-bottom: 20px;
+    margin-top: 2px;
+    font-size: 30px;
+}
+
+.calc-wrapper {
+    letter-spacing: 11px;
+}
+
+.second-row {
+    padding-bottom: 11px;
+}
+
+.third-row {
+    padding-bottom: 11px;
+}
+
+.fourth-row{
+    padding-bottom: 11px;
+}
+
+.left{
+    padding-bottom: 20px;
+}
+
+input {
+    font-size: 20px;
+}
+
+.calcbtn {
+    background-color: black;
+    color: #00ffec;
+    border: 0.1px thin #00ffec;
+    height: 40px;
+    width: 40px;
+    border: 1px solid  #00ffec;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
