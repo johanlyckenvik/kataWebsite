@@ -1,116 +1,51 @@
 const http = require('http'),
-    fs = require('fs');
+fs = require('fs');
+
+const loadFile = (path, contentType, status, req, res) => {
+    fs.readFile(path, (err, data) => {
+        if (err) {
+            console.log(err);
+        }
+        res.writeHeader(status, {"Content-Type": contentType});  
+        res.write(data);  
+        res.end(); 
+    })
+}
      
     http.createServer(function(req, res) {  
-        if (req.url === '/'){
-            fs.readFile('./views/index.html', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/html"});  
-                res.write(data);  
-                res.end(); 
-            })
-            //
-            // STYLES 
-            //
-
-        } else if (req.url === '/styles/styles.css'){
-            fs.readFile('./styles/styles.css', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/css"});  
-                res.write(data);  
-                res.end(); 
-            })
-        } else if (req.url === '/styles/calc-styles.css'){
-            fs.readFile('./styles/calc-styles.css', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/css"});  
-                res.write(data);  
-                res.end(); 
-            })
-        } else if (req.url === '/styles/roman-styles.css'){
-            fs.readFile('./styles/roman-styles.css', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/css"});  
-                res.write(data);  
-                res.end(); 
-            })
-
-            //
-            // FIZZBUZZ
-            //
-
-        }  else if (req.url === '/scripts/fizzBuzz.js'){
-            fs.readFile('./scripts/fizzBuzz.js', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/javascript"});  
-                res.write(data);  
-                res.end(); 
-            })
-            
-        } else if (req.url === '/fizzbuzz'){
-            fs.readFile('./views/fizzBuzz.html', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/html"});  
-                res.write(data);  
-                res.end(); 
-            }) 
-            //
-            // CALCULATOR
-            //
-        } else if (req.url === '/scripts/calculator.js'){
-            fs.readFile('./scripts/calculator.js', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/javascript"});  
-                res.write(data);  
-                res.end(); 
-            })
-            
-        } else if (req.url === '/calculator'){
-            fs.readFile('./views/calculator.html', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/html"});  
-                res.write(data);  
-                res.end(); 
-            }) 
-            //
-            // ROMAN NUMBERALS
-            // 
-        } else if (req.url === '/scripts/numeralConverters/romanToArabic.js'){
-            fs.readFile('./scripts/numeralConverters/romanToArabic.js', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/javascript"});  
-                res.write(data);  
-                res.end(); 
-            })
-            
-        } else if (req.url === '/romannumerals'){
-            fs.readFile('./views/romanNumerals.html', (err, data) => {
-                if (err) {
-                    console.log(err);
-                }
-                res.writeHeader(200, {"Content-Type": "text/html"});  
-                res.write(data);  
-                res.end(); 
-            })
+        switch(true){
+            case req.url === '/':
+                loadFile('./views/index.html', "text/html", 200, req, res);
+                break;
+            case req.url === '/styles/styles.css':
+                loadFile('./styles/styles.css', "text/css", 200, req, res);
+                break;
+            case req.url === '/styles/calc-styles.css':
+                loadFile('./styles/calc-styles.css', "text/css", 200, req, res);
+                break;
+            case req.url === '/styles/roman-styles.css':
+                loadFile('./styles/roman-styles.css', "text/css", 200, req, res);
+                break;
+            case req.url === '/scripts/fizzBuzz.js':
+                loadFile('./scripts/fizzBuzz.js', "text/javascript", 200, req, res);
+                break;
+            case req.url === '/fizzbuzz':
+                loadFile('./views/fizzBuzz.html', "text/html", 200, req, res);
+                break;
+            case req.url === '/scripts/calculator.js':
+                loadFile('./scripts/calculator.js', "text/javascript", 200, req, res);
+                break;
+            case req.url === '/calculator':
+                loadFile('./views/calculator.html', "text/html", 200, req, res);
+                break;
+            case req.url === '/scripts/numeralConverters/romanToArabic.js':
+                loadFile('./scripts/numeralConverters/romanToArabic.js', "text/javascript", 200, req, res);
+                break;
+            case req.url === '/romannumerals':
+                loadFile('./views/romanNumerals.html', "text/html", 200, req, res);
+                break;
+            default:
+                loadFile('./views/index.html', "text/html", 200, req, res);
         }
-        
     }).listen(3000);
-
+    

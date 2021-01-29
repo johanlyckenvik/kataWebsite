@@ -1,6 +1,4 @@
 const fizzbuzz = array => array.map(input => {
-  // Input from users?
-  // Manipulate DOM?
 
     switch (true) {
       case input < 0:
@@ -42,19 +40,10 @@ const fizzbuzz = array => array.map(input => {
     let userInput = [parseInt(counter.textContent) + 1];
     let output = fizzbuzz(userInput);
     let score = userInput[0] - 1;
-
-    
-    console.log('fizz buzz output', output);
-    console.log('element value', button.value);
-    console.log(tryAgain);
-    console.log(output[0])
-
-    
-    
+  
     counter.textContent = userInput[0];
     if (button.value != output[0]){
       counter.textContent = 'GAME OVER';
-      console.log(userInput[0] - 1);
       contentDiv.removeChild(whatsNext);
       innerWrapper.removeChild(buttonContainer);
       contentDiv.appendChild(createElement('div', `Score: ${score - 1}`, 'score'));
